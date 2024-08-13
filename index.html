@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <!-- <button onclick="foo()">Asd</button> -->
+    <div class="container" id="container">
+        <div class="calculatorContainer">
+            <div class="display" id="display"></div>
+            <div class="buttonContainer">
+                <div class="row">
+                    <button onclick="reset()" class="button">AC</button>
+                    <button onclick="negativ()" class="button">+/-</button>
+                    <button class="button">%</button>
+                    <button onclick="operation('/')" class="button orange">/</button>
+                </div>
+    
+                <div class="row">
+                    <button onclick="getButtonValue(7)" id="button" class="button" value="7">7</button>
+                    <button onclick="getButtonValue(8)" id="button" class="button" value="8">8</button>
+                    <button onclick="getButtonValue(9)" id="button" class="button" value="9">9</button>
+                    <button onclick="operation('X')" id="button" class="button orange">X</button>
+                </div>
+                <div class="row">
+                    <button onclick="getButtonValue(4)" id="button" class="button" value="4">4</button>
+                    <button onclick="getButtonValue(5)" id="button" class="button" value="5">5</button>
+                    <button onclick="getButtonValue(6)" id="button" class="button" value="6">6</button>
+                    <button onclick="operation('-')" id="button" class="button orange">-</button>
+                </div>
+                <div class="row">
+                    <button onclick="getButtonValue(1)" id="button" class="button" value="1">1</button>
+                    <button onclick="getButtonValue(2)" id="button" class="button" value="2">2</button>
+                    <button onclick="getButtonValue(3)" id="button" class="button" value="3">3</button>
+                    <button onclick="operation('+')" id="button" class="button orange">+</button>
+                </div>
+                <div class="row">
+                    <button  onclick="getButtonValue(0)" id="button" class="button grow" value="0">0</button>
+                    <button class="button">.</button>
+                    <button onclick="seeResult()" class="button orange">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
